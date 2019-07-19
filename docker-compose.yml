@@ -1,0 +1,20 @@
+version: '2.1'
+services:
+  site:
+    image: "lopydev/node10"
+    container_name: "dev_lopy_socket"
+    volumes:
+      - app:/app
+    networks:
+      - frontend
+volumes:
+  app:
+    driver: local
+    driver_opts:
+      type: none
+      device: $PWD
+      o: bind
+networks:
+  frontend:
+    external:
+      name: frontend

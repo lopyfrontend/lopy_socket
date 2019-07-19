@@ -1,0 +1,36 @@
+{
+  "name": "lopy_socket",
+  "version": "0.0.1",
+  "description": "解决tcp的粘包拆包",
+  "main": "src/lopy_socket.js",
+  "scripts": {
+    "test": "mocha --require ./node_modules/babel-core/register.js ./test/**.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopyfrontend/lopy_socket.git"
+  },
+  "keywords": [
+    "socket",
+    "tcp",
+    "stick",
+    "package",
+    "node"
+  ],
+  "author": "uljjmhn520",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lopyfrontend/lopy_socket/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "mocha": "^6.2.0",
+    "should": "^13.2.3"
+  },
+  "homepage": "https://github.com/lopyfrontend/lopy_socket#readme"
+}
