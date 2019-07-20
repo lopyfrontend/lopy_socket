@@ -1,6 +1,6 @@
 {
   "name": "lopy_socket",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "解决tcp的粘包拆包",
   "main": "src/index.js",
   "scripts": {
