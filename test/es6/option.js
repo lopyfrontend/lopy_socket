@@ -1,5 +1,5 @@
 import should from 'should';
-import {Option} from "../src/index";
+import {Option} from "../../src/index";
 
 describe('test optionGlobal', function () {
   it('optionGlobal instance', function () {

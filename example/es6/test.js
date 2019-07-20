@@ -1,5 +1,5 @@
 
-const {Filters} = require('../src/filter');
+const {filters} = require('../../src/');
 
 /* 引入net模块 */
 var net = require("net");
@@ -29,7 +29,7 @@ server.listen(8000, function () {
   console.log("Creat server on http://127.0.0.1:8000/");
 });
 
-var a = new Filters.Telnet.Telnet();
+var a = new filters.Telnet.Telnet();
 
 
 console.log(a);

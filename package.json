@@ -4,7 +4,11 @@
   "description": "解决tcp的粘包拆包",
   "main": "src/lopy_socket.js",
   "scripts": {
-    "test": "mocha --require ./node_modules/babel-core/register.js ./test/**.js"
+    "build":"babel src/es6 -d src/es5",
+    "build-test":"babel test/es6 -d test/es5",
+    "build-example":"babel example/es6 -d example/es5",
+    "prepublishOnly": "npm run build && npm run build-example",
+    "test": "mocha --require ./node_modules/babel-core/register.js  --recursive"
   },
   "repository": {
     "type": "git",

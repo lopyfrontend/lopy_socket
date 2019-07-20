@@ -88,8 +88,6 @@ class LopySocket {
 
   get dataFilter() {
     if (null == this._dataFilter) {
-
-      console.log('?????????????????');
       throw new Error('dataFilter must be set');
     }
 

@@ -1,8 +1,6 @@
 
-import {Option,LopySocket} from "../src";
-import {Telnet} from "../src/filter/telnet";
+import {Option,LopySocket} from "../../src";
 
-let telnetFilter = new Telnet();
 
 
 describe('test lopy_socket',function () {

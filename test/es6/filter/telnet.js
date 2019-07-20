@@ -1,5 +1,5 @@
 //import {Telnet,TelnetResult} from "../../src/dataFilter/telnet";
-import {filters} from "../../src";
+import {filters} from "../../../src";
 
 import should from 'should';
 

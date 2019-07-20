@@ -1,13 +1,11 @@
-import {Option} from './option';
-import {LopySocket} from "./lopy_socket";
-
-import {Telnet,TelnetResult} from "./filter/telnet";
+'use strict';
 
 
-let filters = {
-  telnet:{
-    TelnetResult,
-    Telnet
-  }
-};
-export {Option,LopySocket,filters};
+try {
+  console.log("> Note: Using ES6 version of lopy_socket");
+  module.exports = require("./es6/index")
+} catch (e) {
+
+  console.log("> Note: Using ES5 version of lopy_socket");
+  module.exports = require("./es5/index")
+}

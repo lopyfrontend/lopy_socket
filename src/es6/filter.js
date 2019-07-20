@@ -37,7 +37,7 @@ class FilterResult {
   /**
    * 这是最终结果，会返回给onData回调的数据中，required
    */
-  data;
+  data = {}
   /**
    * others ......
    */
