@@ -65,5 +65,3 @@ typings/
 
 # vagrant
 .vagrant
-
-**/es5/*
