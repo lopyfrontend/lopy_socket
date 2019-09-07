@@ -1,12 +1,12 @@
 {
   "name": "lopy_socket",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "解决tcp的粘包拆包",
   "main": "src/index.js",
   "scripts": {
-    "build":"babel src/es6 -d src/es5",
-    "build-test":"babel test/es6 -d test/es5",
-    "build-example":"babel example/es6 -d example/es5",
+    "build": "babel src/es6 -d src/es5",
+    "build-test": "babel test/es6 -d test/es5",
+    "build-example": "babel example/es6 -d example/es5",
     "prepublishOnly": "npm run build && npm run build-example",
     "test": "mocha --require ./node_modules/babel-core/register.js  --recursive"
   },
